@@ -1,0 +1,28 @@
+/* 1. Importación de Fuentes (Merriweather para títulos, Inter para cuerpo) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@700;900&display=swap');
+
+/* 2. Definición de Variables CSS para nuestros Colores Rústicos */
+:root {
+    /* Paleta de Colores Personalizada */
+    --color-marron-biblioteca: #8B4513; /* Marrón Cálido Principal */
+    --color-crema-fondo: #FAF0E6;      /* Crema Claro para Contenedores */
+    --color-fondo-base: #FAFAFA;       /* Blanco muy Suave para el Fondo */
+    --color-gris-texto: #333333;       /* Gris Oscuro para Texto */
+
+    /* Fuentes */
+    --font-serif: 'Merriweather', serif;
+    --font-sans: 'Inter', sans-serif;
+}
+
+/* 3. Estilos Globales para Aplicar Fuentes y Colores Base */
+body {
+    font-family: var(--font-sans);
+    color: var(--color-gris-texto);
+    background-color: var(--color-fondo-base);
+}
+
+/* 4. Clases de Ayuda de Tailwind (Si es necesario, para usar las variables) */
+.text-marron { color: var(--color-marron-biblioteca); }
+.bg-marron { background-color: var(--color-marron-biblioteca); }
+.bg-crema { background-color: var(--color-crema-fondo); }
+.border-marron { border-color: var(--color-marron-biblioteca); }
